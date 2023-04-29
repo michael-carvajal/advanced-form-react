@@ -7,7 +7,7 @@ import SampleSurvey from './components/SampleSurvey/SampleSurvey';
 import Header from './components/Header';
 function App() {
   return (
-    <>
+    <div className='app-container'>
       <Header />
       <Navigation />
       <Switch>
@@ -17,7 +17,7 @@ function App() {
         <Route path="/report/:reportId"><Report /></Route>
       </Switch>
       <footer>(c) Copyright ...................................................................................................</footer>
-    </>
+    </div>
   );
 }
 

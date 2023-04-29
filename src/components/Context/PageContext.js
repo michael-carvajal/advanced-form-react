@@ -15,5 +15,4 @@ export default function PageProvider(props) {
         </PageContext.Provider>
     )
 }
-console.log(PageContext);
 export const CustomPageNameHook = () => useContext(PageContext)

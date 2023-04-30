@@ -73,3 +73,21 @@ nav {
  .home p {
     font-weight: 500;
  }
+
+ .mcq {
+    display: flex;
+    flex-direction: column;
+ }
+.sample-survey {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.question {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.q-choice{
+    margin-bottom: 7px;
+
+}

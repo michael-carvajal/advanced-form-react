@@ -4,15 +4,18 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom';
 import PageProvider from './components/Context/PageContext';
+import SampleSurveyProvider from './components/Context/SampleSurveyContext';
 
 const Root = () => {
   return (
-    <PageProvider>
+    <SampleSurveyProvider>
 
+    <PageProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
     </PageProvider>
+    </SampleSurveyProvider>
   )
 }
 

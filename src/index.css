@@ -91,3 +91,9 @@ nav {
     margin-bottom: 7px;
 
 }
+button {
+    width: fit-content;
+    align-self: center;
+    font-size: 22px;
+    padding: 10px;
+}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { CustomSampleSurveyHook } from "../Context/SampleSurveyContext";
 
 const MCQ = ({ sample }) => {
@@ -10,7 +10,7 @@ MCQ2, setMCQ2 } = CustomSampleSurveyHook()
     useEffect(() => {
         // const errors = {}
     })
-console.log(MCQ1, MCQ2);
+// console.log(MCQ1, MCQ2);
     return (
         <div className='mcq'>
             {mcqs.map((question, questionIndex) => {

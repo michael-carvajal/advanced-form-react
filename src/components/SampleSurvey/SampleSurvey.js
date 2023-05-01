@@ -2,6 +2,7 @@ import sample from '../../_assets/sample.json';
 import { CustomSampleSurveyHook } from '../Context/SampleSurveyContext';
 import MCQ from './MCQ'
 import SingleCR from './SingleCR'
+import MultipleCR from './MultipleCR';
 const SampleSurvey = () => {
     const { MCQ1, setMCQ1,
         MCQ2, setMCQ2, singleCR1, setSingleCR1,
@@ -30,6 +31,7 @@ const SampleSurvey = () => {
             <p style={{ fontSize: '20px' }}>{sample.instructions}</p>
             <MCQ sample={sample} />
             <SingleCR sample={sample} />
+            <MultipleCR sample={sample} />
 
 
             <button >Submit</button>

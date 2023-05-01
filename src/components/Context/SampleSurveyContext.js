@@ -7,13 +7,14 @@ export default function SampleSurveyProvider(props) {
     const [singleCR1, setSingleCR1] = useState("")
     const [singleCR2, setSingleCR2] = useState("")
     const [feedback, setFeedback] = useState("")
+    const [MultipleCR, setMultipleCR] = useState("")
 
     return (
         <SampleSurveyContext.Provider
             value={{
                 MCQ1, setMCQ1,
                 MCQ2, setMCQ2, singleCR1, setSingleCR1,
-                singleCR2, setSingleCR2, feedback, setFeedback
+                singleCR2, setSingleCR2, feedback, setFeedback, MultipleCR, setMultipleCR
             }}
         >
             {props.children}

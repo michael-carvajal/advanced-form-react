@@ -1,7 +1,13 @@
+import { CustomSampleSurveyHook } from "../Context/SampleSurveyContext"
 
-const MultipleCR = () => {
+const MultipleCR = ({sample}) => {
+    const chosenQuestion = sample.questions.filter(question => question.stem === "Why or Why Not?")
+    const { MultipleCR, setMultipleCR } = CustomSampleSurveyHook()
     return (
-        <h2>MultipleCR</h2>
+        <div className="multiple-cr">
+            <label>{chosenQuestion[0].stem}</label>
+            <textarea value={MultipleCR} onChange={(e) => setMultipleCR(e.target.value)}></textarea>
+        </div>
     )
 }
 

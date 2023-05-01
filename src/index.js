@@ -5,9 +5,10 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom';
 import PageProvider from './components/Context/PageContext';
 import SampleSurveyProvider from './components/Context/SampleSurveyContext';
-
+import SensoryPreferencesProvider from './components/Context/SensoryPreferencesContext';
 const Root = () => {
   return (
+      <SensoryPreferencesProvider>
     <SampleSurveyProvider>
 
     <PageProvider>
@@ -16,6 +17,7 @@ const Root = () => {
     </BrowserRouter>
     </PageProvider>
     </SampleSurveyProvider>
+</SensoryPreferencesProvider>
   )
 }
 
